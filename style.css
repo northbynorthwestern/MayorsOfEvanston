@@ -1,0 +1,221 @@
+body {
+  background-color: #fff5d4;
+  margin: 0;
+}
+html {
+  margin: 0;
+}
+.header {
+  padding: 40px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  display: block;
+  overflow: auto;
+}
+h1 {
+  font-size: 3.5em;
+  color: #c97244;
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #c97244;
+  border-bottom: 25px solid transparent;
+  margin-right: 1%;
+}
+.triangle-right:hover {
+  cursor: pointer;
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid #c97244;
+  border-bottom: 25px solid transparent;
+  left: 0;
+  margin-left: 1%;
+}
+.triangle-right:hover {
+  cursor: pointer;
+}
+#content {
+  width: 70%;
+  margin: auto;
+  display: block;
+  overflow: auto;
+  padding: 20px;
+}
+#wrapper {
+  background-color: white;
+  border: 10px solid #c97244;
+}
+#article-wrapper {
+  background-color: white;
+  padding: 20px;
+  border: 5px solid #c97244;
+  font-size: 1.2em;
+}
+.portrait {
+  width: 100%;
+  float: left;
+}
+.tenure {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+.tenure em {
+  font-weight: 800;
+  font-style: normal;
+}
+.intro {
+  display: flex;
+  margin: auto;
+}
+.col {
+  width: 25%;
+}
+.intro-text {
+  display: block;
+  font-size: 1em;
+  float: right;
+  width: 70%;
+  height: fit-content;
+  margin: auto;
+}
+.restart {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+h1,
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+h2 {
+  font-size: 1, 8em;
+}
+img {
+  width: 100%;
+  display: block;
+}
+p {
+  font-size: 1em;
+  font-family: "Playfair Display", serif;
+}
+a {
+  color: black;
+  transition: background-color 0.5s ease;
+}
+a:hover {
+  background-color: #fff5d4;
+}
+.text {
+  width: 80%;
+  margin: auto;
+  font-size: 1.1em;
+  text-align: center;
+}
+.author {
+  margin: 0;
+}
+
+.mag-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 7vh;
+  padding: 1vh 0;
+  z-index: 1;
+}
+.nbn-logo-nav {
+  margin-left: 1vw;
+  height: 100%;
+}
+.nbn-path {
+  fill: #c97244;
+  transition: fill 1s ease;
+}
+.homepage-link:hover .nbn-path {
+  fill: #b6acd1;
+}
+
+button {
+  background-color: #c97244;
+  border: none;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover {
+  cursor: pointer;
+}
+.next {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 400px;
+}
+.back {
+  float: left;
+  left: 10px;
+  position: absolute;
+  top: 400px;
+}
+
+/* MOBILE STYLING - add any mobile specific CSS here but please leave navbar styling as is!*/
+
+@media screen and (max-width: 800px) {
+  #wrapper {
+    margin-top: 100px;
+    border: 5px solid #c97244;
+  }
+  .header {
+    padding: 0px;
+  }
+  .header h1 {
+    font-size: 2.3em;
+  }
+  .content {
+    width: 100%;
+  }
+  .intro {
+    font-size: 0.7em;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .portrait {
+    width: 100%;
+  }
+  .col {
+    width: 70%;
+  }
+  .triangle-left {
+    border-top: 15px solid transparent;
+    border-right: 30px solid #c97244;
+    border-bottom: 15px solid transparent;
+    left: 0;
+  }
+  .triangle-right {
+    border-top: 15px solid transparent;
+    border-left: 30px solid #c97244;
+    border-bottom: 15px solid transparent;
+    margin: 0px;
+    right: 0 !important;
+  }
+  #article-wrapper {
+    font-size: 1em;
+    border: 3px solid #c97244;
+  }
+  button {
+    display: block;
+    margin: auto;
+    padding: 10;
+  }
+}
